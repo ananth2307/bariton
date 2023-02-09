@@ -3,6 +3,22 @@
   <head>
     <link rel="stylesheet" href="./css/style.css" data-n-g="" />
     <script src="./components/Header.js" type="text/javascript" defer></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        const tabName = window.location.href.split('#')[1];
+        document.getElementById(`${tabName}_title`).click();
+        const menuItems = document.querySelectorAll(".service-menu li");
+        menuItems.forEach(function (menuItem) {
+          menuItem.addEventListener("click", function (event) {
+            setTimeout(() => {
+              document.getElementById(`${window.location.href.split('#')[1]}_title`).click();
+              window.scrollTo(0, 500);
+            }, 100);
+          });
+        });
+        setTimeout(() => window.scrollTo(0, 0), 100);
+      };
+    </script>
     <head-component></head-component>
   </head>
   <body>
@@ -24,43 +40,36 @@
           <div class="line"></div>
         </div>
       </div>
-      <div class="services-section bg-f2f6f9 ptb-110">
+      <div class="services-section bg-f2f6f9 ptb-110 industry-container">
         <div class="container">
           <div class="section-title">
-            <h2>We Offer Professional Solutions</h2>
+            <h2>Partnering With Organizations Across Industries</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Understanding an industry inside and out is vital to a company&#39;s growth journey. With the combined industry expertise and knowledge of LatentView Analytics&#39; global experts and consultants, we develop insights for our clients, equip them with the right technology and tools, and help them build processes.
             </p>
           </div>
           <div class="tab services-tab-list">
             <div class="row">
               <div class="col-lg-4 col-md-4">
                 <ul class="tabs">
-                  <li class="current" onclick="openTab(event, 'tab1')">
-                    <i class="flaticon-income"></i><span>Data Analysis</span>
+                  <li class="current" onclick="openTab(event, 'tab1')" id="tab1_title">
+                    <i class="flaticon-income"></i><span>Healthcare</span>
                   </li>
-                  <li onclick="openTab(event, 'tab2')">
+                  <li onclick="openTab(event, 'tab2')" id="tab2_title">
                     <i class="flaticon-automatic"></i
-                    ><span>Automation Optimization</span>
+                    ><span>Banking &amp; Finance Services</span>
                   </li>
-                  <li onclick="openTab(event, 'tab3')">
+                  <li onclick="openTab(event, 'tab3')" id="tab3_title">
                     <i class="flaticon-locked"></i
-                    ><span>Security &amp; Surveillance</span>
+                    ><span>Insurance</span>
                   </li>
-                  <li onclick="openTab(event, 'tab4')">
+                  <li onclick="openTab(event, 'tab4')" id="tab4_title">
                     <i class="flaticon-molecular"></i
-                    ><span>Health &amp; Manufacturing</span>
-                  </li>
-                  <li onclick="openTab(event, 'tab5')">
-                    <i class="flaticon-gear"></i><span>Software Engineers</span>
-                  </li>
-                  <li onclick="openTab(event, 'tab6')">
-                    <i class="flaticon-ceo"></i><span>IT Professional</span>
+                    ><span>Life Science</span>
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-8 col-md-8">
+              <div class="col-lg-8 col-md-8 industry-tab-container">
                 <div class="tab-content">
                   <div id="tab1" class="tabs-item animate__animated">
                     <div class="image">
@@ -68,17 +77,16 @@
                     </div>
                     <div class="content">
                       <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomized words which
-                        don&#x27;t look even slightly believable. If you are
-                        going to use a passage.
+                        Healthcare systems must deftly maneuver around regulatory hurdles, manage patients and services, glean insights from data to make communities healthier, and develop policy recommendations—all while lives hang in the balance. 
                       </p>
-                      <a
+                      <p>
+                        We have a strong history of helping healthcare clients solve their toughest challenges through digital transformation tools. Not only are our team members data and technology experts, but they have rich healthcare industry experience. 
+                      </p>
+                      <!-- <a
                         class="btn btn-primary"
                         href="../service-details/index.html"
                         >Read More</a
-                      >
+                      > -->
                     </div>
                   </div>
                   <div id="tab2" class="tabs-item animate__animated">
@@ -87,17 +95,16 @@
                     </div>
                     <div class="content">
                       <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomized words which
-                        don&#x27;t look even slightly believable. If you are
-                        going to use a passage.
+                        Banking and Financial Services (BFS) utilise data and analytics in their decision making at every value chain from customer acquisition to back-office operations. Financial Institutions look towards algorithms and analytical functions to improve operational efficiency, drive growth, and provide personalised experiences for customers. 
                       </p>
-                      <a
+                      <p>
+                        Your financial service business needs to leverage the power of technology and analytics to move from only growth to a profitable business model, prevent fraudulent transactions and gain a connected view of data from your marketing campaigns.
+                      </p>
+                      <!-- <a
                         class="btn btn-primary"
                         href="../service-details/index.html"
                         >Read More</a
-                      >
+                      > -->
                     </div>
                   </div>
                   <div id="tab3" class="tabs-item animate__animated">
@@ -106,17 +113,16 @@
                     </div>
                     <div class="content">
                       <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomized words which
-                        don&#x27;t look even slightly believable. If you are
-                        going to use a passage.
+                        The global insurance industry is laden with growing risk, changing customer preferences, evolving regulatory requirements, and an influx of new entrants. A low-interest-rate environment and economic implications from the pandemic outbreak are challenging the revenue streams and profitability. The rise in natural catastrophes is further pushing insurers to revisit the existing risk assessment models.
                       </p>
-                      <a
+                      <p>
+                        This necessitates accurate pricing, effective underwriting, omnichannel distribution, and faster claims processing. Making strategic shifts such as annual renewal to ongoing product offerings, changing the role of the agent as product educators, manual to algorithmic underwriting, and claims organisations focusing on risk prevention and mitigation, have become the need of the hour. 
+                      </p>
+                      <!-- <a
                         class="btn btn-primary"
                         href="../service-details/index.html"
                         >Read More</a
-                      >
+                      > -->
                     </div>
                   </div>
                   <div id="tab4" class="tabs-item animate__animated">
@@ -125,55 +131,16 @@
                     </div>
                     <div class="content">
                       <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomized words which
-                        don&#x27;t look even slightly believable. If you are
-                        going to use a passage.
+                        The Life Sciences of tomorrow will be driven by digital transformation – enabled by the ever-evolving digital and advanced technologies like Artificial Intelligence, Machine Learning, Serverless/ Cloud/ Mobile Apps etc.
                       </p>
-                      <a
-                        class="btn btn-primary"
-                        href="../service-details/index.html"
-                        >Read More</a
-                      >
-                    </div>
-                  </div>
-                  <div id="tab5" class="tabs-item animate__animated">
-                    <div class="image">
-                      <img src="../images/services-img1.png" alt="image" />
-                    </div>
-                    <div class="content">
                       <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomized words which
-                        don&#x27;t look even slightly believable. If you are
-                        going to use a passage.
+                        SumPlus with our clients to re-engineer the enterprise data and analytics transformation strategy to deliver world-class white box solutions and applications to meet the uncertainties, challenges, and opportunities of the industry today.
                       </p>
-                      <a
+                      <!-- <a
                         class="btn btn-primary"
                         href="../service-details/index.html"
                         >Read More</a
-                      >
-                    </div>
-                  </div>
-                  <div id="tab6" class="tabs-item animate__animated">
-                    <div class="image">
-                      <img src="../images/services-img1.png" alt="image" />
-                    </div>
-                    <div class="content">
-                      <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomized words which
-                        don&#x27;t look even slightly believable. If you are
-                        going to use a passage.
-                      </p>
-                      <a
-                        class="btn btn-primary"
-                        href="../service-details/index.html"
-                        >Read More</a
-                      >
+                      > -->
                     </div>
                   </div>
                 </div>

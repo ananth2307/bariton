@@ -1,6 +1,15 @@
 .fun-facts-wrap-area {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 .preloader {
-    visibility: hidden;
+  visibility: hidden;
+}
+.why-home-section h2 {
+  color: #fff;
+}
+.why-home-section p {
+  color: #fff;
+}
+.industry-container .section-title p {
+  max-width: none;
 }

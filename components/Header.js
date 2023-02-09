@@ -41,45 +41,55 @@ class Header extends HTMLElement {
                   >About Us </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#"
+                <a class="nav-link" href="services.html"
                   >Services <i class="fas fa-chevron-down"></i
                 ></a>
                 <ul class="dropdown-menu">
                       <li class="nav-item">
-                        <a class="nav-link" href="service.html"
-                          >Services-1</a
+                        <a class="nav-link" href="services-ai.html"
+                          >AI & Data Science</a
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="service.html"
-                          >Services-2</a
+                        <a class="nav-link" href="services-marketing.html"
+                          >Marketing Analytics</a
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="service.html"
-                          >Services-3</a
+                        <a class="nav-link" href="services-bigdata.html"
+                          >Big Data Analytics</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="services-customer.html"
+                          >Customer Analytics</a
                         >
                       </li>
                     </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#"
+                <a class="nav-link" href="#" onclick="javascript:void(0)"
                   >Industries <i class="fas fa-chevron-down"></i
                 ></a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu service-menu">
                       <li class="nav-item">
-                        <a class="nav-link" href="industry.html"
-                          >Industries-1</a
+                        <a class="nav-link" href="industry.html#tab1"
+                          >Healthcare</a
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="industry.html"
-                          >Industries-2</a
+                        <a class="nav-link" href="industry.html#tab2"
+                          >Banking & Finance Services</a
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="industry.html"
-                          >Industries-3</a
+                        <a class="nav-link" href="industry.html#tab3"
+                          >Insurance</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="industry.html#tab4"
+                          >Life Science</a
                         >
                       </li>
                     </ul>
@@ -93,32 +103,8 @@ class Header extends HTMLElement {
               </li>
             </ul>
             <div class="others-options">
-              <div class="option-item">
-                <i
-                  class="search-btn flaticon-search"
-                  style="display: block"
-                ></i
-                ><i class="close-btn fas fa-times"></i>
-                <div
-                  class="search-overlay search-popup"
-                  style="display: none"
-                >
-                  <div class="search-box">
-                    <form class="search-form">
-                      <input
-                        class="search-input"
-                        name="search"
-                        placeholder="Search"
-                        type="text"
-                      /><button class="search-button" type="submit">
-                        <i class="fas fa-search"></i>
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <a class="btn btn-primary" href="../contact/index.html"
-                >Schedule a Demo</a
+              <a class="btn btn-primary" href="contact.html"
+                >Get in touch</a
               >
             </div>
           </div>
@@ -147,9 +133,7 @@ class Footer extends HTMLElement {
                     ><img src="../images/white-logo.png" alt="image"
                   /></a>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud.
+                  Sumplus offers state-of-the-art AI solutions which are enterprise-ready and respects the privacy of its users’ data. We adhere to the best-in-class data privacy and security protocols.
                   </p>
                 </div>
                 <ul class="social">
@@ -182,7 +166,7 @@ class Footer extends HTMLElement {
                 <ul class="footer-services-list">
                   <li>
                     <a href="../service-details/index.html"
-                      >Product Engineering</a
+                      >AI & Data Science</a
                     >
                   </li>
                   <li>
@@ -190,17 +174,17 @@ class Footer extends HTMLElement {
                   </li>
                   <li>
                     <a href="../service-details/index.html"
-                      >Big Data Analysis</a
+                      >Marketing Analytics</a
                     >
                   </li>
                   <li>
                     <a href="../service-details/index.html"
-                      >Desktop Applications</a
+                      >Big Data Analytics</a
                     >
                   </li>
                   <li>
                     <a href="../service-details/index.html"
-                      >Mobile Applications</a
+                      >Customer Analytics</a
                     >
                   </li>
                 </ul>
@@ -210,11 +194,12 @@ class Footer extends HTMLElement {
               <div class="single-footer-widget">
                 <h3>Quick Links</h3>
                 <ul class="quick-links-list">
-                  <li><a href="../about/index.html">About Us</a></li>
-                  <li><a href="../blog/index.html">Blog</a></li>
-                  <li><a href="../contact/index.html">Contact</a></li>
-                  <li><a href="../services/index.html">Services</a></li>
-                  <li><a href="../pricing/index.html">Pricing</a></li>
+                <li><a href="index.html">Home</a></li>
+                  <li><a href="../about.html">About Us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="industries.html">Industries</a></li>
+                  <li><a href="career.html">Career</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -223,8 +208,9 @@ class Footer extends HTMLElement {
                 <h3>Contacts</h3>
                 <ul class="footer-contact-list">
                   <li>
-                    <span>Address:</span>2750 Quadra Street <br />
-                    Victoria, Canada
+                    <span>Address:</span>Sum Plus Analytics <br />
+                    Plot no 50, 2nd Floor, TNHB Main Road, <br/>
+                    Velachery, Chennai - 600 042.
                   </li>
                   <li>
                     <span>Email:</span
@@ -232,11 +218,10 @@ class Footer extends HTMLElement {
                       href="../cdn-cgi/l/email-protection.html"
                       class="__cf_email__"
                       data-cfemail="cdafacbfa4b9a2a38daaa0aca4a1e3aea2a0"
-                      >[email&#160;protected]</a
+                      >enquiry@sumplus.com </a
                     >
                   </li>
-                  <li><span>Phone:</span>+44 587 154756</li>
-                  <li><span>Fax:</span>+44 785 4578964</li>
+                  <li><span>Phone:</span>+91 98405 59017</li>
                 </ul>
               </div>
             </div>
@@ -248,9 +233,7 @@ class Footer extends HTMLElement {
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <p>
                   Copyright ©<!-- -->2022<!-- -->
-                  Bariton. All Rights Reserved
-                  <a href="https://envytheme.com/" target="_blank">EnvyTheme</a
-                  >.
+                  Sum Plus. All Rights Reserved.
                 </p>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6">
@@ -334,7 +317,7 @@ customElements.define("head-component", Head);
 //Tab setup
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabs-item");
+  tabcontent = document.querySelectorAll(".industry-tab-container .tabs-item");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
     tabcontent[i].className = tabcontent[i].className.replace(" animate__fadeIn", "")
@@ -346,4 +329,46 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   document.getElementById(tabName).className = document.getElementById(tabName).className + " animate__fadeIn"
   evt.currentTarget.className += "current";  
+}
+
+//Accordion
+async function handleAccordion(e, accordionContentId) {
+  const ele = document.getElementById(accordionContentId);
+  const accordions = document.querySelectorAll(".career-section .accordion__button")
+  const accordionsCont = document.querySelectorAll(".career-section .accordion__panel")
+  for(let i = 0; i < accordions.length; i++) {
+      accordions[i].ariaExpanded = "false";
+      accordionsCont[i].hidden = true;
+  }
+  if(e.currentTarget.ariaExpanded === "false") {
+    e.currentTarget.ariaExpanded = "true";
+    ele.hidden = false;
+  } else {
+    e.currentTarget.ariaExpanded = "false";
+    ele.hidden = true;
+  }
+}
+
+async function sendEmail() {
+  // create reusable transporter object using the default SMTP transport
+  let transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: 'beyonception@gmail.com', // generated ethereal user
+      pass: '23@beyonception79one' // generated ethereal password
+    }
+  });
+
+  // send mail with defined transport object
+  let info = await transporter.sendMail({
+    from: '"Sender Name" <beyonception@example.com>', // sender address
+    to: "ananthprasad91@example.com", // list of receivers
+    subject: "Subject Line", // Subject line
+    text: "Hello world?", // plain text body
+    html: "<b>Hello world?</b>" // html body
+  });
+
+  console.log("Message sent: %s", info.messageId);
 }
