@@ -13,3 +13,7 @@
 .industry-container .section-title p {
   max-width: none;
 }
+.article-image {
+  display: flex;
+  justify-content: center;
+}
