@@ -133,7 +133,7 @@ class Footer extends HTMLElement {
                     ><img src="../images/white-logo.png" alt="image"
                   /></a>
                   <p>
-                  Sumplus offers state-of-the-art AI solutions which are enterprise-ready and respects the privacy of its users’ data. We adhere to the best-in-class data privacy and security protocols.
+                  Sumplus offers state-of-the-art AI solutions which are enterprise-ready and respects the privacy of its users&#39; data. We adhere to the best-in-class data privacy and security protocols.
                   </p>
                 </div>
                 <ul class="social">
@@ -165,25 +165,25 @@ class Footer extends HTMLElement {
                 <h3>Services</h3>
                 <ul class="footer-services-list">
                   <li>
-                    <a href="../service-details/index.html"
+                    <a href="../service-ai.html"
                       >AI & Data Science</a
                     >
                   </li>
                   <li>
-                    <a href="../service-details/index.html">UX/UI Design</a>
+                    <a href="../services.html">UX/UI Design</a>
                   </li>
                   <li>
-                    <a href="../service-details/index.html"
+                    <a href="../service-marketing.html"
                       >Marketing Analytics</a
                     >
                   </li>
                   <li>
-                    <a href="../service-details/index.html"
+                    <a href="../service-bigdata.html"
                       >Big Data Analytics</a
                     >
                   </li>
                   <li>
-                    <a href="../service-details/index.html"
+                    <a href="../service-customer.html"
                       >Customer Analytics</a
                     >
                   </li>
@@ -232,11 +232,11 @@ class Footer extends HTMLElement {
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <p>
-                  Copyright ©<!-- -->2022<!-- -->
+                  Copyright ©<!-- -->2023<!-- -->
                   Sum Plus. All Rights Reserved.
                 </p>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-6">
+              <!-- <div class="col-lg-6 col-md-6 col-sm-6">
                 <ul>
                   <li>
                     <a href="../privacy-policy/index.html">Privacy Policy</a>
@@ -247,7 +247,7 @@ class Footer extends HTMLElement {
                     >
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
