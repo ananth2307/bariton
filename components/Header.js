@@ -165,25 +165,22 @@ class Footer extends HTMLElement {
                 <h3>Services</h3>
                 <ul class="footer-services-list">
                   <li>
-                    <a href="../service-ai.html"
+                    <a href="../services-ai.html"
                       >AI & Data Science</a
                     >
                   </li>
                   <li>
-                    <a href="../services.html">UX/UI Design</a>
-                  </li>
-                  <li>
-                    <a href="../service-marketing.html"
+                    <a href="../services-marketing.html"
                       >Marketing Analytics</a
                     >
                   </li>
                   <li>
-                    <a href="../service-bigdata.html"
+                    <a href="../services-bigdata.html"
                       >Big Data Analytics</a
                     >
                   </li>
                   <li>
-                    <a href="../service-customer.html"
+                    <a href="../services-customer.html"
                       >Customer Analytics</a
                     >
                   </li>
@@ -192,7 +189,7 @@ class Footer extends HTMLElement {
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="single-footer-widget">
-                <h3>Quick Links</h3>
+                <h3>Link Industries</h3>
                 <ul class="quick-links-list">
                 <li><a href="index.html">Home</a></li>
                   <li><a href="../about.html">About Us</a></li>

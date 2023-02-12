@@ -22960,6 +22960,11 @@ textarea.form-control {
   font-size: 70px;
   font-weight: 700;
 }
+.main-banner-content span {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #437fec; 
+}
 .main-banner-content p {
   font-size: 15px;
   color: #fff;
