@@ -11,10 +11,10 @@ class Header extends HTMLElement {
         <nav class="navbar navbar-expand-md navbar-light">
           <a class="navbar-brand" href="index.html"
             ><img
-              src="../images/white-logo.png"
+              src="../images/logo.png"
               class="main-logo"
               alt="logo" /><img
-              src="../images/black-logo.png"
+              src="../images/logo.png"
               class="optional-logo"
               alt="logo" /></a
           ><button
@@ -130,7 +130,7 @@ class Footer extends HTMLElement {
               <div class="single-footer-widget">
                 <div class="logo">
                   <a href="../index.html"
-                    ><img src="../images/white-logo.png" alt="image"
+                    ><img src="../images/logo-white.png" alt="image"
                   /></a>
                   <p>
                   Sumplus offers state-of-the-art AI solutions which are enterprise-ready and respects the privacy of its users&#39; data. We adhere to the best-in-class data privacy and security protocols.
@@ -288,7 +288,7 @@ class Head extends HTMLElement {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>Bariton - IT Machine Learning React Next Template</title>
+        <title>Sumplus Analytics</title>
         <meta name="next-head-count" content="3" />
         <link
           href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;display=swap"
@@ -347,25 +347,5 @@ async function handleAccordion(e, accordionContentId) {
 }
 
 async function sendEmail() {
-  // create reusable transporter object using the default SMTP transport
-  let transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false, // true for 465, false for other ports
-    auth: {
-      user: 'beyonception@gmail.com', // generated ethereal user
-      pass: '23@beyonception79one' // generated ethereal password
-    }
-  });
-
-  // send mail with defined transport object
-  let info = await transporter.sendMail({
-    from: '"Sender Name" <beyonception@example.com>', // sender address
-    to: "ananthprasad91@example.com", // list of receivers
-    subject: "Subject Line", // Subject line
-    text: "Hello world?", // plain text body
-    html: "<b>Hello world?</b>" // html body
-  });
-
-  console.log("Message sent: %s", info.messageId);
+  
 }
