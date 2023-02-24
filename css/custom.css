@@ -10,10 +10,16 @@
 .why-home-section p {
   color: #fff;
 }
-.industry-container .section-title p {
+.industry-container .section-title {
   max-width: none;
+}
+.industry-container .section-title p {
+  max-width: 85%;
 }
 .article-image {
   display: flex;
   justify-content: center;
+}
+.home-services .single-services-card {
+  min-height: 46vw;
 }

@@ -11,7 +11,7 @@ class Header extends HTMLElement {
         <nav class="navbar navbar-expand-md navbar-light">
           <a class="navbar-brand" href="index.html"
             ><img
-              src="../images/logo.png"
+              src="../images/logo-white.png"
               class="main-logo"
               alt="logo" /><img
               src="../images/logo.png"
@@ -189,7 +189,7 @@ class Footer extends HTMLElement {
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="single-footer-widget">
-                <h3>Link Industries</h3>
+                <h3>Quick Links</h3>
                 <ul class="quick-links-list">
                 <li><a href="index.html">Home</a></li>
                   <li><a href="../about.html">About Us</a></li>
@@ -348,4 +348,61 @@ async function handleAccordion(e, accordionContentId) {
 
 async function sendEmail() {
   
+}
+
+function addDialogClosedListener(input, callback) {
+  var onFocus = function() {
+      window.removeEventListener('focus', onFocus);
+callback();
+  };
+  var onClick = function() {
+      window.addEventListener('focus', onFocus);
+  };
+  input.addEventListener('click', onClick);
+  return function() {
+      input.removeEventListener('click', onClick);
+      window.removeEventListener('focus', onFocus);
+  };
+}
+
+
+// Usage example:
+
+var file = document.querySelector('#file_input');
+
+addDialogClosedListener(file, function() {
+  console.log('File dialog closed!');
+  setTimeout(function() {
+    document.getElementById('file_name').innerHTML = document.getElementById('file_input').value.split('\\')[2];
+  }, 1000);
+});
+
+function attach(event) {
+  event.preventDefault();
+  document.getElementById('file_input').click();
+}
+function submitCareer(e) {
+  e.preventDefault();
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const number = document.getElementById('number');
+  const subject = document.getElementById('subject');
+  const job = document.getElementById('job');
+  const msg = document.getElementById('msg');
+  const data = {
+    name,
+    email,
+    number,
+    subject,
+    job,
+    msg,
+  }
+  fetch('localhost/api/mailer', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: JSON.stringify(data)
+  })
 }

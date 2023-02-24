@@ -6,7 +6,7 @@ const transporter = nodemailer.createTransport({
   host: "mail.sumplusanalytics.com",
   auth: {
     user: "mailer@sumplusanalytics.com",
-    pass: "S_um@12Analyt",
+    pass: "Plus@12Analyt",
   },
   secure: true,
 });
