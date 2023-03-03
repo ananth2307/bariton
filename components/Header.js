@@ -12,7 +12,7 @@ class Header extends HTMLElement {
           <a class="navbar-brand" href="index.html"
             ><img
               src="../images/logo-white.png"
-              class="main-logo"
+              class="main-logo logo-adjust"
               alt="logo" /><img
               src="../images/logo.png"
               class="optional-logo"
@@ -130,7 +130,7 @@ class Footer extends HTMLElement {
               <div class="single-footer-widget">
                 <div class="logo">
                   <a href="../index.html"
-                    ><img src="../images/logo-white.png" alt="image"
+                    ><img src="../images/logo-white.png" alt="image" class="logo-adjust"
                   /></a>
                   <p>
                   Sumplus offers state-of-the-art AI solutions which are enterprise-ready and respects the privacy of its users&#39; data. We adhere to the best-in-class data privacy and security protocols.
@@ -194,7 +194,7 @@ class Footer extends HTMLElement {
                 <li><a href="index.html">Home</a></li>
                   <li><a href="../about.html">About Us</a></li>
                   <li><a href="services.html">Services</a></li>
-                  <li><a href="industries.html">Industries</a></li>
+                  <li><a href="industry.html">Industries</a></li>
                   <li><a href="career.html">Career</a></li>
                   <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -229,7 +229,7 @@ class Footer extends HTMLElement {
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <p>
-                  Copyright ©<!-- -->2023<!-- -->
+                  Copyright &#169; 2019
                   Sum Plus. All Rights Reserved.
                 </p>
               </div>
@@ -298,7 +298,7 @@ class Head extends HTMLElement {
           href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" type="image/png" href="../favicon.png" />
+        <link rel="icon" type="image/png" href="../images/favicon-16x16.png" />
         <link rel="stylesheet" href="./css/style.css" data-n-g="" />
         <link rel="stylesheet" href="./css/custom.css" />
         `;

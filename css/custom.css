@@ -21,5 +21,24 @@
   justify-content: center;
 }
 .home-services .single-services-card {
-  min-height: 46vw;
+  min-height: 440px;
+}
+.logo-adjust {
+  height: 55px;
+}
+.single-team-box {
+  cursor: pointer;
+}
+.article-image img {
+  width: 70%;
+}
+.faq-image {
+  margin-top: 8%;
+}
+.faq-image img {
+  width: 110% !important;
+  max-width: 110% !important;
+}
+.map-container {
+  margin-top: 5%;
 }

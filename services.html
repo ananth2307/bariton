@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" type="image/png" href="./images/favicon-16x16.png" />
     <link rel="stylesheet" href="./css/style.css" data-n-g="" />
     <script src="./components/Header.js" type="text/javascript" defer></script>
+    <script>
+      function redirect(path) {
+        window.location.href=`/${path}`
+      }
+    </script>
     <head-component></head-component>
   </head>
   <body>
@@ -94,9 +100,9 @@
           </div>
           <div class="row">
             <div class="col-lg-3 col-sm-6">
-              <div class="single-team-box">
+              <div class="single-team-box" onclick="redirect('services-ai.html')">
                 <div class="image">
-                  <img src="../images/team/team1.jpg" alt="Team Image" />
+                  <img src="./images/service-home/ai.png" alt="Team Image" />
                 </div>
                 <div class="content">
                   <h3>AI & Data Science</h3>
@@ -104,9 +110,9 @@
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
-              <div class="single-team-box">
+              <div class="single-team-box" onclick="redirect('services-marketing.html')">
                 <div class="image">
-                  <img src="../images/team/team2.jpg" alt="Team Image" />
+                  <img src="./images/service-home/mart-bkp.png" alt="Team Image" />
                 </div>
                 <div class="content">
                   <h3>Marketing Analytics</h3>
@@ -114,9 +120,9 @@
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
-              <div class="single-team-box">
+              <div class="single-team-box" onclick="redirect('services-bigdata.html')">
                 <div class="image">
-                  <img src="../images/team/team3.jpg" alt="Team Image" />
+                  <img src="./images/service-home/bd.png" alt="Team Image" />
                 </div>
                 <div class="content">
                   <h3>Big Data Analytics</h3>
@@ -124,9 +130,9 @@
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
-              <div class="single-team-box">
+              <div class="single-team-box" onclick="redirect('services-customer.html')">
                 <div class="image">
-                  <img src="../images/team/team4.jpg" alt="Team Image" />
+                  <img src="./images/service-home/ca.png" alt="Team Image" />
                 </div>
                 <div class="content">
                   <h3>Customer Analytics</h3>
